@@ -22,16 +22,11 @@ class Utils {
         content: SizedBox(
           width: getScreenSize().width,
           child: Container(
-            width: 200,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  content,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ],
+            child: Text(
+              content,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(fontSize: 10),
             ),
           ),
         ),

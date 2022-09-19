@@ -1,3 +1,4 @@
+import 'package:app_amazon/layout/screen_layout.dart';
 import 'package:app_amazon/resources/authentication_methods.dart';
 import 'package:app_amazon/screens/sign_up_screen.dart';
 import 'package:app_amazon/utils/color_themes.dart';
@@ -34,6 +35,7 @@ class _SignInScreenState extends State<SignInScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: SizedBox(
           height: screenSize.height,
           width: screenSize.width,
@@ -83,33 +85,44 @@ class _SignInScreenState extends State<SignInScreen> {
                         Align(
                           alignment: Alignment.center,
                           child: CustomMainButton(
-                              child: const Text(
-                                "Sign In",
-                                style: TextStyle(
-                                    letterSpacing: 0.6, color: Colors.black),
-                              ),
-                              color: yellowColor,
-                              isLoading: isLoading,
-                              onPressed: () async {
-                                setState(() {
-                                  isLoading = true;
-                                });
+                            child: const Text(
+                              "Sign In",
+                              style: TextStyle(
+                                  letterSpacing: 0.6, color: Colors.black),
+                            ),
+                            color: yellowColor,
+                            isLoading: isLoading,
+                            onPressed: () async {
+                              setState(() {
+                                isLoading = true;
+                              });
 
-                                String output =
-                                    await authenticationMethods.signInUser(
-                                        email: emailController.text,
-                                        password: passwordController.text);
-                                setState(() {
-                                  isLoading = false;
+                              String output =
+                                  await authenticationMethods.signInUser(
+                                      email: emailController.text,
+                                      password: passwordController.text);
+                              setState(() {
+                                isLoading = false;
+                              });
+                              if (output == "success") {
+                                //functions
+                                Future.microtask(() {
+                                  Navigator.pushReplacement(
+                                    context,
+                                    PageRouteBuilder(
+                                      pageBuilder: (_, __, ___) =>
+                                          ScreenLayout(),
+                                      transitionDuration: Duration(seconds: 0),
+                                    ),
+                                  );
                                 });
-                                if (output == "success") {
-                                  //functions
-                                } else {
-                                  //error
-                                  Utils().showSnackBar(
-                                      context: context, content: output);
-                                }
-                              }),
+                              } else {
+                                //error
+                                Utils().showSnackBar(
+                                    context: context, content: output);
+                              }
+                            },
+                          ),
                         )
                       ],
                     ),

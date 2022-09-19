@@ -43,7 +43,7 @@ class _ScreenLayoutState extends State<ScreenLayout> {
       child: SafeArea(
         child: Scaffold(
           body: PageView(
-            physics: NeverScrollableScrollPhysics(),
+            physics: BouncingScrollPhysics(),
             controller: pageController,
             children: screens,
           ),
