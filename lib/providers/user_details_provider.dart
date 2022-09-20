@@ -6,7 +6,7 @@ class UserDetailsProvider with ChangeNotifier {
   UserDetailsModel userDetails;
 
   UserDetailsProvider()
-      : userDetails = UserDetailsModel(name: "Loading", address: "Loading");
+      : userDetails = UserDetailsModel(name: "Cargando", address: "Cargando");
 
   Future getData() async {
     userDetails = await CloudFirestoreClass().getNameAndAddress();

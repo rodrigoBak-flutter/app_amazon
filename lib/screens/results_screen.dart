@@ -26,7 +26,7 @@ class ResultsScreen extends StatelessWidget {
                 text: TextSpan(
                   children: [
                     const TextSpan(
-                      text: "Showing results for ",
+                      text: "Mostrando los resultados para ",
                       style: TextStyle(
                         fontSize: 17,
                       ),

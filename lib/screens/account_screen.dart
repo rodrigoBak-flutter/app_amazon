@@ -41,7 +41,7 @@ class _AccountScreenState extends State<AccountScreen> {
                 padding: const EdgeInsets.all(8.0),
                 child: CustomMainButton(
                     child: const Text(
-                      "Sign Out",
+                      "Cerrar sesion",
                       style: TextStyle(color: Colors.black),
                     ),
                     color: Colors.orange,
@@ -53,7 +53,7 @@ class _AccountScreenState extends State<AccountScreen> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: CustomMainButton(
-                    child: const Text("Sell",
+                    child: const Text("Vender",
                         style: TextStyle(color: Colors.black)),
                     color: yellowColor,
                     isLoading: false,
@@ -83,7 +83,7 @@ class _AccountScreenState extends State<AccountScreen> {
                         children.add(SimpleProductWidget(productModel: model));
                       }
                       return ProductsShowcaseListView(
-                          title: "Your orders", children: children);
+                          title: "Tus ordenes", children: children);
                     }
                   }),
               const Padding(
@@ -91,7 +91,7 @@ class _AccountScreenState extends State<AccountScreen> {
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Order Requests",
+                    "Solicitudes de pedido",
                     style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -119,12 +119,12 @@ class _AccountScreenState extends State<AccountScreen> {
                                             snapshot.data!.docs[index].data());
                                 return ListTile(
                                   title: Text(
-                                    "Order: ${model.orderName}",
+                                    "Orden: ${model.orderName}",
                                     style:
                                         TextStyle(fontWeight: FontWeight.w500),
                                   ),
                                   subtitle:
-                                      Text("Address: ${model.buyersAddress}"),
+                                      Text("Direccion: ${model.buyersAddress}"),
                                   trailing: IconButton(
                                       onPressed: () async {
                                         FirebaseFirestore.instance
@@ -184,7 +184,7 @@ class IntroductionWidgetAccountScreen extends StatelessWidget {
                 text: TextSpan(
                   children: [
                     TextSpan(
-                      text: "Hello, ",
+                      text: "Hola, ",
                       style: TextStyle(
                         color: Colors.grey[800],
                         fontSize: 26,

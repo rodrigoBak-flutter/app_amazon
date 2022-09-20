@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
     List<Widget> temp50 =
         await CloudFirestoreClass().getProductsFromDiscount(50);
     List<Widget> temp0 = await CloudFirestoreClass().getProductsFromDiscount(0);
-    print("everything is done");
+    print("todo está hecho");
     setState(() {
       discount70 = temp70;
       discount60 = temp60;
@@ -82,13 +82,16 @@ class _HomeScreenState extends State<HomeScreen> {
                       CategoriesHorizontalListViewBar(),
                       AdBannerWidget(),
                       ProductsShowcaseListView(
-                          title: "Upto 70% Off", children: discount70!),
+                          title: "Hasta un 70% de descuento",
+                          children: discount70!),
                       ProductsShowcaseListView(
-                          title: "Upto 60% Off", children: discount60!),
+                          title: "Hasta un 60% de descuento",
+                          children: discount60!),
                       ProductsShowcaseListView(
-                          title: "Upto 50% Off", children: discount50!),
+                          title: "Hasta un 50% de descuento",
+                          children: discount50!),
                       ProductsShowcaseListView(
-                          title: "Explore", children: discount0!),
+                          title: "Explorar", children: discount0!),
                     ],
                   ),
                 ),

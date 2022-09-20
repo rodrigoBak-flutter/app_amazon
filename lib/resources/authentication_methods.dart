@@ -16,7 +16,7 @@ class AuthenticationMethods {
     address.trim();
     email.trim();
     password.trim();
-    String output = "Something went wrong";
+    String output = "Algo salió mal";
     if (name != "" && address != "" && email != "" && password != "") {
       try {
         await firebaseAuth.createUserWithEmailAndPassword(
@@ -28,7 +28,7 @@ class AuthenticationMethods {
         output = e.message.toString();
       }
     } else {
-      output = "Please fill up all the fields.";
+      output = "Por favor, rellene todos los campos";
     }
     return output;
   }
@@ -37,7 +37,7 @@ class AuthenticationMethods {
       {required String email, required String password}) async {
     email.trim();
     password.trim();
-    String output = "Something went wrong";
+    String output = "Algo salió mal";
     if (email != "" && password != "") {
       try {
         await firebaseAuth.signInWithEmailAndPassword(
@@ -47,7 +47,7 @@ class AuthenticationMethods {
         output = e.message.toString();
       }
     } else {
-      output = "Please fill up all the fields.";
+      output = "Por favor, rellene todos los campos.";
     }
     return output;
   }

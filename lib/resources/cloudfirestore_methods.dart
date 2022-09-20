@@ -46,7 +46,7 @@ class CloudFirestoreClass {
   }) async {
     productName.trim();
     rawCost.trim();
-    String output = "Something went wrong";
+    String output = "Algo salió mal";
 
     if (image != null && productName != "" && rawCost != "") {
       try {
@@ -74,7 +74,7 @@ class CloudFirestoreClass {
         output = e.toString();
       }
     } else {
-      output = "Please make sure all the fields are not empty";
+      output = "Por favor, asegúrese de que todos los campos estén completos.";
     }
 
     return output;

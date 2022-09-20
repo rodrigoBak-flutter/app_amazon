@@ -14,7 +14,7 @@ class ReviewDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     return RatingDialog(
       title: const Text(
-        'Type a review for this product!',
+        '¡Escriba una reseña para este producto!',
         textAlign: TextAlign.center,
         style: TextStyle(
           fontSize: 25,
@@ -23,8 +23,8 @@ class ReviewDialog extends StatelessWidget {
       ),
       // encourage your user to leave a high rating?
 
-      submitButtonText: 'Send',
-      commentHint: 'Type here',
+      submitButtonText: 'Enviar',
+      commentHint: 'Escriba aquí',
 
       onSubmitted: (RatingDialogResponse res) async {
         CloudFirestoreClass().uploadReviewToDatabase(

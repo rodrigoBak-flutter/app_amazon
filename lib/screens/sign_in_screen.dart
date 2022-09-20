@@ -66,7 +66,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
-                          "Sign-In",
+                          "Ingreso",
                           style: TextStyle(
                               fontWeight: FontWeight.w500, fontSize: 33),
                         ),
@@ -74,19 +74,19 @@ class _SignInScreenState extends State<SignInScreen> {
                           title: "Email",
                           controller: emailController,
                           obscureText: false,
-                          hintText: "Enter your email",
+                          hintText: "Ingresa tu Email",
                         ),
                         TextFieldWidget(
-                          title: "Password",
+                          title: "Contraseña",
                           controller: passwordController,
                           obscureText: true,
-                          hintText: "Enter your password",
+                          hintText: "Ingresa tu contraseña",
                         ),
                         Align(
                           alignment: Alignment.center,
                           child: CustomMainButton(
                             child: const Text(
-                              "Sign In",
+                              "Iniciar sesion",
                               style: TextStyle(
                                   letterSpacing: 0.6, color: Colors.black),
                             ),
@@ -138,7 +138,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       const Padding(
                         padding: EdgeInsets.symmetric(horizontal: 10),
                         child: Text(
-                          "New to Amazon?",
+                          "¿Nuevo en Amazon?",
                           style: TextStyle(color: Colors.grey),
                         ),
                       ),
@@ -152,7 +152,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   ),
                   CustomMainButton(
                       child: const Text(
-                        "Create an Amazon Account",
+                        "Crear cuenta",
                         style: TextStyle(
                           letterSpacing: 0.6,
                           color: Colors.black,

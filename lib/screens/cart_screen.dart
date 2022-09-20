@@ -54,7 +54,7 @@ class _CartScreenState extends State<CartScreen> {
                             ConnectionState.waiting) {
                           return CustomMainButton(
                               child: const Text(
-                                "Loading",
+                                "Cargando",
                               ),
                               color: yellowColor,
                               isLoading: true,
@@ -62,7 +62,7 @@ class _CartScreenState extends State<CartScreen> {
                         } else {
                           return CustomMainButton(
                               child: Text(
-                                "Proceed to buy (${snapshot.data!.docs.length}) items",
+                                "Proceder a comprar (${snapshot.data!.docs.length}) items",
                                 style: const TextStyle(color: Colors.black),
                               ),
                               color: yellowColor,
@@ -75,7 +75,7 @@ class _CartScreenState extends State<CartScreen> {
                                                 listen: false)
                                             .userDetails);
                                 Utils().showSnackBar(
-                                    context: context, content: "Done");
+                                    context: context, content: "Hecho");
                               });
                         }
                       },

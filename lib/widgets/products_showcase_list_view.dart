@@ -40,7 +40,7 @@ class ProductsShowcaseListView extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.only(left: 14),
                   child: Text(
-                    "Show more",
+                    "Ver mas",
                     style: TextStyle(color: activeCyanColor),
                   ),
                 )

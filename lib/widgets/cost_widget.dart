@@ -17,10 +17,10 @@ class CostWidget extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Text(
-          "₹",
+          "€",
           style: TextStyle(
             color: color,
-            fontSize: 10,
+            fontSize: 15,
             fontFeatures: const [
               FontFeature.superscripts(),
             ],

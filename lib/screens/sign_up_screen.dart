@@ -71,39 +71,39 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                              "Sign-Up",
+                              "Registro",
                               style: TextStyle(
                                   fontWeight: FontWeight.w500, fontSize: 33),
                             ),
                             TextFieldWidget(
-                              title: "Name",
+                              title: "Nombre",
                               controller: nameController,
                               obscureText: false,
-                              hintText: "Enter your name",
+                              hintText: "Ingrese su nombre",
                             ),
                             TextFieldWidget(
-                              title: "Address",
+                              title: "Direccion",
                               controller: addressController,
                               obscureText: false,
-                              hintText: "Enter your address",
+                              hintText: "Ingrese su direccion",
                             ),
                             TextFieldWidget(
                               title: "Email",
                               controller: emailController,
                               obscureText: false,
-                              hintText: "Enter your email",
+                              hintText: "Ingrese su  email",
                             ),
                             TextFieldWidget(
-                              title: "Password",
+                              title: "Contraseña",
                               controller: passwordController,
                               obscureText: true,
-                              hintText: "Enter your password",
+                              hintText: "Ingrese su contraseña",
                             ),
                             Align(
                               alignment: Alignment.center,
                               child: CustomMainButton(
                                 child: const Text(
-                                  "Sign Un",
+                                  "Registrar",
                                   style: TextStyle(
                                       letterSpacing: 0.6, color: Colors.black),
                                 ),
@@ -143,7 +143,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                   CustomMainButton(
                       child: const Text(
-                        "Back",
+                        "Atras",
                         style: TextStyle(
                           letterSpacing: 0.6,
                           color: Colors.black,

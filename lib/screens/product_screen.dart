@@ -93,7 +93,7 @@ class _ProductScreenState extends State<ProductScreen> {
                           spaceThingy,
                           CustomMainButton(
                               child: const Text(
-                                "Buy Now",
+                                "Comprar ahora",
                                 style: TextStyle(color: Colors.black),
                               ),
                               color: Colors.orange,
@@ -107,12 +107,12 @@ class _ProductScreenState extends State<ProductScreen> {
                                                 listen: false)
                                             .userDetails);
                                 Utils().showSnackBar(
-                                    context: context, content: "Done");
+                                    context: context, content: "Hecho");
                               }),
                           spaceThingy,
                           CustomMainButton(
                               child: const Text(
-                                "Add to cart",
+                                "Agregar al carro",
                                 style: TextStyle(color: Colors.black),
                               ),
                               color: yellowColor,
@@ -122,7 +122,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                     productModel: widget.productModel);
                                 Utils().showSnackBar(
                                     context: context,
-                                    content: "Added to cart.");
+                                    content: "Añadido al carrito.");
                               }),
                           spaceThingy,
                           CustomSimpleRoundedButton(
@@ -133,7 +133,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                           productUid: widget.productModel.uid,
                                         ));
                               },
-                              text: "Add a review for this product"),
+                              text: "Agregar una reseña para este producto"),
                         ],
                       ),
                     ),

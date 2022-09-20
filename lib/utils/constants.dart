@@ -13,14 +13,14 @@ const String amazonLogoUrl =
 
 const List<String> categoriesList = [
   "Prime",
-  "Mobiles",
-  "Fashion",
-  "Electronics",
-  "Home",
-  "Fresh",
-  "Appliances",
-  "Books, Toys",
-  "Essential"
+  "Móviles",
+  "Moda",
+  "Electronica",
+  "Hogar",
+  "Nuevo",
+  "Accesorios",
+  "Entretenimiento",
+  "Básico"
 ];
 
 const List<Widget> screens = [
@@ -59,9 +59,9 @@ const List<String> smallAds = [
 
 const List<String> adItemNames = [
   "Amazon Pay",
-  "Recharge",
-  "Rewards",
-  "Pay Bills"
+  "Recargar",
+  "Recompensas",
+  "Pagar facturas"
 ];
 
 //Dont even attemp to scroll to the end of this manually lmao
@@ -132,9 +132,9 @@ List<Widget> testChildren = [
 ];
 
 List<String> keysOfRating = [
-  "Very bad",
-  "Poor",
-  "Average",
-  "Good",
-  "Excellent"
+  "Muy malo",
+  "Pobre",
+  "Promedio",
+  "Bueno",
+  "Excelente"
 ];

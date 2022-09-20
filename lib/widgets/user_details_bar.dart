@@ -47,7 +47,7 @@ class UserDetailsBar extends StatelessWidget {
               SizedBox(
                 width: screenSize.width * 0.7,
                 child: Text(
-                  "Deliver to ${userDetails.name} - ${userDetails.address} ",
+                  "Entregar a ${userDetails.name} - ${userDetails.address} ",
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(

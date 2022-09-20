@@ -111,12 +111,12 @@ class CartItemWidget extends StatelessWidget {
                             CloudFirestoreClass()
                                 .deleteProductFromCart(uid: product.uid);
                           },
-                          text: "Delete"),
+                          text: "Eliminar"),
                       const SizedBox(
                         width: 5,
                       ),
                       CustomSimpleRoundedButton(
-                          onPressed: () {}, text: "Save for later"),
+                          onPressed: () {}, text: "Guardar para mas tarde"),
                     ],
                   ),
                   const Padding(
@@ -124,7 +124,7 @@ class CartItemWidget extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        "See more like this",
+                        "Ver mas como esto",
                         style: TextStyle(color: activeCyanColor, fontSize: 12),
                       ),
                     ),

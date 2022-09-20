@@ -93,22 +93,23 @@ class _SellScreenState extends State<SellScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               TextFieldWidget(
-                                  title: "Name",
+                                  title: "Nombre",
                                   controller: nameController,
                                   obscureText: false,
-                                  hintText: "Enter the name of the item"),
+                                  hintText:
+                                      "Introduce el nombre del artículo."),
                               TextFieldWidget(
-                                  title: "Cost",
+                                  title: "Precio",
                                   controller: costController,
                                   obscureText: false,
-                                  hintText: "Enter the cost of the item"),
+                                  hintText: "Ingrese el precio del item"),
                               const Text(
-                                "Discount",
+                                "Descuento",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 17),
                               ),
                               ListTile(
-                                title: Text("None"),
+                                title: Text("Ninguno"),
                                 leading: Radio(
                                   value: 1,
                                   groupValue: selected,
@@ -160,7 +161,7 @@ class _SellScreenState extends State<SellScreen> {
                         ),
                         CustomMainButton(
                             child: const Text(
-                              "Sell",
+                              "Vender",
                               style: TextStyle(color: Colors.black),
                             ),
                             color: yellowColor,
@@ -183,7 +184,7 @@ class _SellScreenState extends State<SellScreen> {
                               if (output == "success") {
                                 Utils().showSnackBar(
                                     context: context,
-                                    content: "Posted Product");
+                                    content: "Producto publicado");
                               } else {
                                 Utils().showSnackBar(
                                     context: context, content: output);
@@ -191,7 +192,7 @@ class _SellScreenState extends State<SellScreen> {
                             }),
                         CustomMainButton(
                             child: const Text(
-                              "Back",
+                              "Atras",
                               style: TextStyle(color: Colors.black),
                             ),
                             color: Colors.grey[300]!,
